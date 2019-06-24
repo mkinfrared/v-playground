@@ -1,6 +1,6 @@
 {
   "hooks": {
     "pre-commit": "yarn precommit",
-    "post-merge": "yarn postmerge"
+    "post-merge": "npm postmerge"
   }
 }

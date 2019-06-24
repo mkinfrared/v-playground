@@ -17,5 +17,6 @@ export let server: Server;
     console.log("Could not connect to database");
     server = app.listen(4, () => console.log(`Server is running on port ${4}`));
     console.log("a change to check versioning");
+    console.log("a change to check versioning");
   }
 })();
