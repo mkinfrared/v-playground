@@ -22,7 +22,7 @@
     "lint-styles": "stylelint \"**/*.scss\" --syntax scss --fix",
     "prettier": "prettier --write packages/**/*.ts?(x)",
     "precommit": "yarn prettier && yarn lint",
-    "prepush": "if git-branch-is master; then lerna version --conventional-commits --yes; fi"
+    "postmerge": "if git-branch-is master; then lerna version --conventional-commits --yes; fi"
   },
   "devDependencies": {
     "husky": "^2.4.1",
